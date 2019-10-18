@@ -42,6 +42,17 @@ print("删除第4到最后个元素", list1)
 list1[0] = "xiaoming"
 print(list1)
 
+# 查找 in not in
+if "a" in list3:
+    print("存在a")
+else:
+    print("不存在a")
+
+
+if "f" not in list3:
+    print("不存在f")
+
+
 # 获取长度
 l = len(list1)
 print("长度", l)
