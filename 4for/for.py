@@ -27,3 +27,7 @@ for index in range(len(sites)):
     print(sites[index])
 
 
+for i in range(2, 3+1):
+    print("----",i)
+
+
