@@ -8,6 +8,9 @@ else:
     print("没有循环数据!")
 print("完成循环!")
 
+for i in range(len(sites)):
+    print("index", i)
+
 # 遍历数字序列，可以使用内置range()函数
 
 for i in range(5):
@@ -22,3 +25,5 @@ for i in range(0, 10, 3):
 
 for index in range(len(sites)):
     print(sites[index])
+
+

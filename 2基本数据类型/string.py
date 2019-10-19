@@ -49,3 +49,12 @@ print(str)
 
 #是否是数字
 print(str.isdigit())
+
+
+# format
+print('{}网址： "{}!"'.format('菜鸟教程', 'www.runoob.com'))
+
+#如果在 format() 中使用了关键字参数, 那么它们的值会指向使用该名字的参数
+print('{name}网址： {site}'.format(name='菜鸟教程', site='www.runoob.com'))
+
+

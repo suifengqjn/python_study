@@ -10,10 +10,10 @@ hello()
 
 
 # 计算面积函数
-def area(width, height):
+def area(width, height) -> int:
     return width * height
 
-print(area(2,3.5))
+print(area(2.5,3.5))
 
 
 # 参数为不可变对象
