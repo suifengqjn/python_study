@@ -58,3 +58,8 @@ print('{}网址： "{}!"'.format('菜鸟教程', 'www.runoob.com'))
 print('{name}网址： {site}'.format(name='菜鸟教程', site='www.runoob.com'))
 
 
+v = 123
+strv = repr(v)
+print(v, type(strv))
+
+
