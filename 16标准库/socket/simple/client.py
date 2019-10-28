@@ -3,20 +3,19 @@ import socket
 import sys
 
 # 创建 socket 对象
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# 获取本地主机名
-host = socket.gethostname()
-host = ""
 # 设置端口号
 port = 9999
 
 # 连接服务，指定主机和端口
-s.connect((host, port))
+client.connect(("", port))
+
+# 发送
+client.send("我是客户端:你好".encode("utf8"))
 
 # 接收小于 1024 字节的数据
-msg = s.recv(1024)
-
-s.close()
+msg = client.recv(1024)
+client.close()
 
 print (msg.decode('utf-8'))

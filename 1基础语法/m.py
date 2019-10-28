@@ -1,3 +1,4 @@
+# --utf8--
 print("中国，china")
 
 
