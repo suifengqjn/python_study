@@ -6,6 +6,9 @@ import json
 # json.loads(): 对数据进行解码。
 
 
+# json.dump()  将数据写入文件中
+# json.load()  从文件中的数据解析成dict 或者 list
+
 # Python 字典类型转换为 JSON 对象
 data = {
     'no': 1,
@@ -28,5 +31,8 @@ with open('data.json', 'w') as f:
     json.dump(data, f)
 
 # 读取数据
-with open('data.json', 'r') as f:
+# json 转为 dict
+with open('./data.json', 'r') as f:
     data = json.load(f)
+
+    print(type(data), data['no'])
