@@ -16,8 +16,8 @@ except NameError as err:
 
 try:
     print(num)
-except NameError:
-    print("err", NameError)
+except:
+    print("err", "num eroor")
 finally:
     print("executing finally clause")
 
@@ -31,3 +31,13 @@ else:
     print('没有捕获到异常，真高兴')
 finally:
     print('我一定会执行的哦')
+
+
+# 跳过异常
+arr = [1, 2, 3]
+try:
+    v = arr[5]
+    print(v)
+except Exception as e:
+    print(e)
+    pass

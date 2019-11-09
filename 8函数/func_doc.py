@@ -9,7 +9,19 @@ def printLine(char, times):
     c = 0
     while c < times:
         print(char, times)
-
-
+        c += 1
 
 printLine("-", 5)
+
+
+a = "asda"
+if __name__ == "__main__":
+
+    a = "abcd"
+    if 'a' in a:
+        a = 'cbddd'
+    else:
+        a = "bb"
+
+    print(a)
+
