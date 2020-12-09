@@ -80,3 +80,7 @@
 # file.writelines(sequence)
 #
 # 向文件写入一个序列字符串列表，如果需要换行则要自己加入每行的换行符。
+
+filePth = "./3.txt"
+f = open(filePth, "a+")
+f.writelines("qwe\n")
